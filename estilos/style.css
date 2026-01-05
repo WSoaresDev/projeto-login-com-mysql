@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    /* A imagem agora cobre o fundo de tudo */
+    background: url('../imagens/praia.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+section#login {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    
+    width: 100%;
+    max-width: 380px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: white;
+}
+
+section#login > div#imagem {
+    display: none;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+div#formulario > p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+    color: #f0f0f0;
+}
+
+/* Campos de Input */
+div#formulario > p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+    color: #ffffff;
+    /* Um leve sombreado no texto ajuda a ler sobre fundos claros */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Campos de Input mais visíveis */
+form div.campo {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.45); 
+    border-radius: 8px;
+    margin: 15px 0;
+    height: 45px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+}
+
+/* Quando o usuário clica no campo, ele brilha um pouco mais */
+form div.campo:focus-within {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* 1. Garante texto preto ao digitar e placeholder cinza escuro */
+div.campo > input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent !important;
+    padding: 0 10px;
+    color: #000000 !important; /* Texto sempre preto ao digitar */
+    font-weight: 600; /* Deixa a letra um pouco mais gordinha para ler melhor */
+}
+
+div.campo > input::placeholder {
+    color: black; /* #333333 Cinza escuro para o "seu e-mail" e "sua senha" */
+}
+
+/* 2. Mata o fundo branco que o Google Chrome coloca sozinho */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #000000 !important; /* Texto preto no preenchimento */
+    -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.5) inset !important; /* Fundo vidro */
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* 3. Ajuste dos ícones (pessoa, chave e olho) para preto */
+div.campo > span {
+    color: #000000;
+    font-size: 1.2em;
+    padding: 0 10px;
+}
+
+/* 4. Esconde de vez o "Login:" e "Senha:" que estavam feios na direita */
+div.campo > label {
+    display: none;
+}
+
+/* Botões */
+input[type=submit] {
+    width: 100%;
+    height: 45px;
+    background-color: #127c79;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+input[type=submit], a.botao {
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+input[type=submit]:hover, a.botao:hover {
+    transform: scale(1.02); /* Dá um leve "pulo" ao passar o mouse */
+}
+
+input[type=submit]:hover { background-color: #199e9a; }
+
+a.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    height: 45px;
+    margin-top: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+a.botao:hover { background-color: rgba(255, 255, 255, 0.2); }
