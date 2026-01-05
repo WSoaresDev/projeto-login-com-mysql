@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto login</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/media-query.css') }}">
 </head>
 <body>
     <main>
@@ -17,7 +17,7 @@
         <h1>login</h1>
         <p>Seja bem-vindo(a) novamente. Faça login para acessar a sua conta e poder fazer as configurações no seu ambiente.</p>
 
-        <form action="login.php" method="post" required autocomplete="on">
+        <form action="/login" method="post" required autocomplete="on">
             <div class="campo">
                 <span class="material-symbols-outlined">person</span>
                 <input type="email" name="login" id="ilogin" required maxlength="30"
@@ -30,9 +30,9 @@
                 <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" placeholder="sua senha" autocomplete="current-password">
                 <span class="material-symbols-outlined" id="olhinho" onclick="toggleSenha()" style="cursor: pointer; padding-right: 10px;">visibility</span>
             </div>
-            
+
             <input type="submit" value="Entrar">
-            <a href="esqueci.html" class="botao">Esqueci a senha<span class="material-symbols-outlined">mail</span></a>
+            <a href="{{ url_for('tela_cadastro') }}" class="botao">Criar conta</a>
         </form>
         
     </div>

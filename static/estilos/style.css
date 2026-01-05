@@ -9,7 +9,7 @@
 
 body {
     /* A imagem agora cobre o fundo de tudo */
-    background: url('../imagens/praia.jpg') no-repeat center center fixed;
+    background: url('/static/imagens/praia.jpg') no-repeat center center fixed;
     background-size: cover;
     width: 100vw;
     height: 100vh;

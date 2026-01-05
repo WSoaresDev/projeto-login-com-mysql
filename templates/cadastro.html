@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Projeto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/media-query.css') }}">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="formulario">
+                <h1>Criar Conta</h1>
+                <p>Preencha os dados abaixo para se cadastrar.</p>
+
+                {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+                    {% for message in messages %}
+                      <p style="color: #ff4d4d; text-align: center; font-weight: bold;">{{ message }}</p>
+                    {% endfor %}
+                  {% endif %}
+                {% endwith %}
+
+                <form action="/cadastrar" method="post">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="text" name="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">mail</span>
+                        <input type="email" name="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="senha" placeholder="Sua senha" required>
+                    </div>
+                    <input type="submit" value="Cadastrar">
+                    <a href="/" class="botao">Já tenho conta</a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
