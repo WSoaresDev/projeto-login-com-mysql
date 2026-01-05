@@ -6,7 +6,7 @@ Este projeto é um sistema de login e cadastro robusto, desenvolvido com foco em
 ## 📺 Demonstração em Vídeo
 ![Demonstração do Projeto](gravação_de_tela_do_codigo_rodando.mp4)
 
-🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 Back-end: Python 3 com Framework Flask.
 
 Banco de Dados: MySQL (Relacional).
@@ -17,7 +17,7 @@ Python-Dotenv: Gerenciamento de variáveis de ambiente para proteger credenciais
 
 Front-end: HTML5 e CSS3 com design moderno (Glassmorphism).
 
-🛠️ Funcionalidades Principais
+## 🛠️ Funcionalidades Principais
 Cadastro de Usuários: Validação de dados e armazenamento seguro.
 
 Criptografia de Senhas: Nenhuma senha é salva em texto puro no banco de dados. Utilizamos salting e hashing para garantir que, mesmo em caso de vazamento, os dados fiquem ilegíveis.
@@ -28,7 +28,7 @@ Feedback ao Usuário: Mensagens de alerta customizadas (Flask Flash) para erros 
 
 Proteção de Ambiente: Uso de arquivo .env para que chaves secretas e senhas do banco não fiquem expostas no código-fonte.
 
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 Plaintext
 
 projeto-login/
@@ -38,7 +38,7 @@ projeto-login/
 ├── .gitignore           # Proteção de arquivos
 ├── app.py               # Servidor e Rotas Flask
 └── requirements.txt     # Dependências do sistema
-🔧 Como Rodar o Projeto
+## 🔧 Como Rodar o Projeto
 Clone o repositório:
 
 Bash
@@ -69,5 +69,5 @@ Inicie o servidor:
 Bash
 
 python app.py
-👨‍💻 Desenvolvido por
+## 👨‍💻 Desenvolvido por
 Wendel -[Meu LinkedIn](https://www.linkedin.com/in/wendel-soares-b02528204/) | [Meu Portfolio](https://wsoaresdev.github.io/Meu-Portifolio/)
