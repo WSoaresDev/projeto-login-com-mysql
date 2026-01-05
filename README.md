@@ -1,20 +1,10 @@
 # projeto-login-com-mysql
 
-Com certeza! Um README bem estruturado é o que convence o recrutador a olhar o seu código. Ele precisa ser direto, visual e mostrar que você domina as ferramentas.
-
-Aqui está um modelo "brabo", já focado nas tecnologias que usamos (Flask, MySQL, Werkzeug, Dotenv). Basta copiar e adaptar os links:
-
 🛡️ Sistema de Autenticação Full Stack - Flask & MySQL
 Este projeto é um sistema de login e cadastro robusto, desenvolvido com foco em segurança da informação, UX (User Experience) e arquitetura limpa. A aplicação utiliza criptografia de ponta e gerenciamento seguro de credenciais.
 
-Com certeza! Um README bem estruturado é o que convence o recrutador a olhar o seu código. Ele precisa ser direto, visual e mostrar que você domina as ferramentas.
-
-Aqui está um modelo "brabo", já focado nas tecnologias que usamos (Flask, MySQL, Werkzeug, Dotenv). Basta copiar e adaptar os links:
-
-🛡️ Sistema de Autenticação Full Stack - Flask & MySQL
-Este projeto é um sistema de login e cadastro robusto, desenvolvido com foco em segurança da informação, UX (User Experience) e arquitetura limpa. A aplicação utiliza criptografia de ponta e gerenciamento seguro de credenciais.
-
-(Dica: Coloque um GIF de você usando o site aqui)
+## 📺 Demonstração em Vídeo
+![Demonstração do Projeto](gravação_de_tela_do_codigo_rodando.mp4)
 
 🚀 Tecnologias Utilizadas
 Back-end: Python 3 com Framework Flask.
