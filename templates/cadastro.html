@@ -15,24 +15,34 @@
                 <p>Preencha os dados abaixo para se cadastrar.</p>
 
                 {% with messages = get_flashed_messages() %}
-                  {% if messages %}
-                    {% for message in messages %}
-                      <p style="color: #ff4d4d; text-align: center; font-weight: bold;">{{ message }}</p>
-                    {% endfor %}
-                  {% endif %}
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div style="
+                                color: white; 
+                                background: #e74c3c; 
+                                padding: 12px; 
+                                border-radius: 8px; 
+                                margin-bottom: 20px; 
+                                text-align: center; 
+                                font-family: sans-serif; 
+                                font-weight: bold;
+                                box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+                                border: 1px solid #c0392b;
+                                animation: shake 0.5s;">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
                 {% endwith %}
 
                 <form action="/cadastrar" method="post">
                     <div class="campo">
-                        <span class="material-symbols-outlined">person</span>
                         <input type="text" name="nome" placeholder="Seu nome" required>
                     </div>
                     <div class="campo">
-                        <span class="material-symbols-outlined">mail</span>
                         <input type="email" name="email" placeholder="Seu e-mail" required>
                     </div>
                     <div class="campo">
-                        <span class="material-symbols-outlined">vpn_key</span>
                         <input type="password" name="senha" placeholder="Sua senha" required>
                     </div>
                     <input type="submit" value="Cadastrar">
